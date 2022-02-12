@@ -1,6 +1,6 @@
 Here's a starting point with a signin and signup modals ready for you to use and implement authentication
 
-Fork and clone [this]()
+Fork and clone [this](https://github.com/JoinCODED/Task-React-Auth)
 
 # Signup
 
@@ -43,4 +43,4 @@ Fork and clone [this]()
 3- The code is becoming very repeated, create a function called `setUser` in `AuthStore` that takes a `token` as an argument, saves it in the headers, decodes it and saves the decoded object in `this.user`.
 
 4- Call this method in `signin` and `signup` methods and pass it the token.
-"# Task-React-Auth" 
+"# Task-React-Auth"
