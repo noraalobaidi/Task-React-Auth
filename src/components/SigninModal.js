@@ -1,5 +1,6 @@
-import { Button, InputGroup, FormControl, Modal } from 'react-bootstrap';
-import { useState } from 'react';
+import { Button, InputGroup, FormControl, Modal } from "react-bootstrap";
+import { useState } from "react";
+import authstore from "../stores/AuthStore";
 
 function SigninModal() {
   const [show, setShow] = useState(false);
@@ -13,6 +14,7 @@ function SigninModal() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    authstore.signin(user);
     handleClose();
   };
 
